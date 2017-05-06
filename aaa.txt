@@ -1,1 +1,9 @@
 fss似懂非懂方式
+的命令 $ git config --list
+设置用户信息（Git的每次提交操作都会使用这些信息，以便让别人知道是谁提交的） $ git config --global user.name "YourName" $ git config --global user.email YourName@smallez.com
+配置分为三级：系统配置、当前用户配置、当前Git库配置
+“当前Git库配置”会覆盖“当前用户配置”，“当前用户配置”会覆盖“系统配置”
+修改系统配置方法 $ git config --system user.name "YourName"
+修改当前用户配置方法 $ git config --global user.name "YourName"
+修改当前Git库配置方法(先进入到该Git库的目录) $ git config user.name "YourName"
+查看当前的某项配置是什么 $ git config user.name
